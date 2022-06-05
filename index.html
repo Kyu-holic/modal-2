@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <a class="modal-notice" href="#none">Open Fade-In Modal with jQuery</a>
+        <div class="modal">
+            <div class="modal-content">
+                <a class="btn-close" href="#none">X</a>
+                <h2>Welcome to Teams!</h2>
+                <img width="170px" src="./images/teamwork.png" alt="" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    quia fugit sunt ut magni ipsa tempora ipsum, porro similique
+                    quos!
+                </p>
+                <a class="btn-guide" href="#none">Open Guide</a>
+            </div>
+        </div>
+        <script>
+            $(".modal-notice").click(function () {
+                $(".modal").fadeIn();
+            });
+            $(".btn-close").click(function () {
+                $(".modal").fadeOut();
+            });
+        </script>
+    </body>
+</html>
